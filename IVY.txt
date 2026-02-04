@@ -1,0 +1,155 @@
+IVY INTERVIEW QUESTIONS
+Manual Testing / Agile / QA Process
+1.	Introduce yourself
+2.	Roles and Responsibilities in your project
+3.	Explain your project and modules you have worked on, along with the type of testing done
+4.	How many test cases you can write per day for complex and simple projects?
+5.	Who writes test cases – Manual Test Engineer or Automation Test Engineer?
+6.	When do you start testing in a sprint?
+7.	How many test cases you have automated?
+8.	How many test cases you automate per day?
+9.	How do you choose test cases for automation?
+10.	Where do you stop testing?
+11.	What is a Test Case?
+12.	Write positive and negative test cases on Invoice module
+13.	Write positive and negative test cases according to your project
+14.	Difference between Test Case and Test Scenario (give example)
+15.	Write scenarios for Add to Cart functionality
+16.	Write a test case for one scenario (example: Add to Cart)
+17.	Explain positive and negative testing according to your project
+18.	Critical bug in your project – example
+19.	Where did you find the bug – in automation or manual?
+20.	Give an example of low severity and high priority bug
+21.	Bugs – high priority & high severity
+22.	High severity & low priority (example)
+23.	Explain RTM (Requirement Traceability Matrix)
+24.	What are the attributes in an RTM template?
+25.	What is a Test Plan?
+26.	What is Sanity Testing & when do you perform it?
+27.	Difference between Smoke and Sanity Testing
+28.	Difference between Verification and Validation Testing
+29.	What is WBT and BBT? What are the types?
+30.	What is System Testing?
+31.	Difference between Integration Testing and System Testing
+32.	What are the different types of testing you have done in your project?
+33.	How many types of testing are there?
+34.	Explain positive and negative testing according to your project
+35.	What are challenges you faced in automation?
+36.	What are technical challenges you faced in automation project?
+37.	How will you handle a critical defect in automation?
+38.	How will you handle objects in your project?
+39.	How will you maintain test data?
+40.	How will you validate checkbox is enabled or not?
+41.	How will you validate your test script in your project?
+42.	What is Daily Status Report – what do you mention?
+43.	What is Sprint Duration?
+44.	What meetings have you attended in Agile?
+45.	What is a Sprint Backlog?
+46.	What is a Product Backlog?
+47.	What is an Epic in Agile?
+48.	What is the role of a Scrum Master?
+49.	Difference between Kanban and Scrum
+50.	Explain Software Development Life Cycle (SDLC)
+51.	Explain Software Test Life Cycle (STLC)
+52.	Explain entire Automation process followed in your company
+________________________________________
+SQL / Database
+53.	Write a query to LEFT JOIN two tables
+54.	Example of INNER JOIN query
+55.	Write query to find employees working in the same designation whose name starts with ‘M’
+56.	Write query to find maximum score in a table
+57.	Write SQL query to display Customer ID, Order ID, and Shipping ID
+58.	Write SQL query to find details of employee by name
+59.	Write SQL query to find name of employee whose name starts with ‘M’
+60.	Write SQL query to remove duplicate names using JOIN between two tables
+61.	Write syntax of UPDATE a row
+62.	What are SQL commands – DML, DQL, DCL
+63.	Difference between TRUNCATE and DELETE
+64.	What is DISTINCT in SQL? Give an example
+65.	Select query and filter department
+________________________________________
+Java / Programming
+66.	What is Abstraction?
+67.	What is Interface?
+68.	Explain Interface with example
+69.	Difference between Multilevel and Multiple Inheritance
+70.	Is it possible to achieve Multiple Inheritance in Interface? (Give example)
+71.	What is Method Overloading and Method Overriding?
+72.	What is Constructor in Java?
+73.	What is the use of Static keyword?
+74.	Explain Collection Framework
+75.	Explain HashMap usage
+76.	Write Java program to extract only characters from string Inter%$#VI
+77.	Write Java program to count number of special characters in a string
+78.	Write Java program to remove vowels from a string
+79.	Write Java program to print pyramid pattern
+80.	Write Java program to print duplicates in array without using Set
+81.	Write Java program to print second largest number in an array
+82.	Write Java program to sum all elements in an array
+83.	Find the second largest element in array
+________________________________________
+Selenium / Automation
+84.	Which framework are you using?
+85.	Explain your framework
+86.	Were you involved in framework development?
+87.	What is a Hybrid Framework?
+88.	What are the main components in your framework?
+89.	How do you execute framework in Jenkins?
+90.	How do you perform execution with Jenkins?
+91.	How do you perform parallel execution?
+92.	What are the advantages of TestNG?
+93.	Write a TestNG program
+94.	What TestNG annotations you have used?
+95.	How to skip test case in TestNG suite?
+96.	How to pass runtime parameter in Maven?
+97.	How to create TestNG suite?
+98.	How to configure Extent Reports?
+99.	How to handle multiple windows?
+100.	How to handle multiple windows with Array?
+101.	How to handle dynamic attribute values in XPath?
+102.	How to perform mouse related operations?
+103.	How to perform Mouse Hover?
+104.	What are locators in Selenium? Which locator you prefer and why?
+105.	What are types of XPath?
+106.	What are types of XPath syntax?
+107.	What are types of relations in XPath?
+108.	What are XPath axes? Write 2 examples
+109.	Write XPath for search box using text
+110.	Write XPath to get text of alert popup
+111.	Write XPath to fetch inbox in given link
+________________________________________
+API Testing / Postman / RestAssured
+112.	What is REST Assured?
+113.	How do you pass complex JSON file in RestAssured?
+114.	Explain API Validation
+115.	What is Postman tool?
+116.	How to create variable in Postman?
+117.	Difference between POST and GET methods
+118.	Difference between Authentication and Authorization
+119.	Explain OAuth1 vs OAuth2
+________________________________________
+
+
+
+Git / Version Control
+120.	Why do we use version control in GitHub?
+121.	What Git commands have you used?
+________________________________________
+Defect Management
+122.	How do you log defect in JIRA?
+123.	What are attributes of defect in JIRA?
+________________________________________
+Errors / Exceptions
+124.	What exceptions you have faced in Selenium?
+125.	Have you faced ElementNotInteractableException? How did you handle it?
+126.	Explain hierarchy of Exceptions in Java
+127.	If server side error – what status codes you got?
+________________________________________
+General / Personal
+128.	How much would you rate yourself in Java and Selenium (justify)?
+129.	What are your hobbies?
+130.	What are your technical strengths and weaknesses?
+131.	What automation resources were there in your team?
+132.	How many tools have you used in your project?
+133.	Do you know about Katalon?
+
