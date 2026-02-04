@@ -1,0 +1,38 @@
+https://docs.google.com/spreadsheets/d/1E4JKlRHRkUDVcWxvdcFlXnjVhJn_uXhIFgM9s0Tou3A/edit#gid=0
+
+GitHub - Thanos
+=========
+https://github.com/weaspire/thanos.git
+
+
+Phuoc Ha2:05 PM
+https://docs.google.com/spreadsheets/d/1bbzcP2UY0qdLM9ZJIgY6H8S8_EUn9aXi8Ictw0yg2Zk/edit?usp=sharing
+Phuoc Ha2:19 PM
+https://docs.google.com/spreadsheets/d/1ykdTMH8pE1hd4FwgG7AO2MzW1AmaqLfq_z1s3FfBnSE/edit?hl=en#gid=0
+Akshay Gowda2:20 PM
+TQ
+Long Nguyen2:20 PM
+https://weaspire.atlassian.net/browse/QO-87
+Phuoc Ha2:32 PM
+Some business settings for budget& claim that you might need. I also update the sheet
+
++ Claim review policy
+ multi_level_claim_review_enabled
+
++ Multiple currencies budget 
+	> budget_multiple_debit_accounts_enabled
+
++ Claim OCR
+	> claims_ocr_enabled
+
++ Budget request BO, Admin
+	> budget_edit_request_enabled 
++ Budget enable 
+	> budgets_enabled 
+
++ Claim enable 
+	> claims_enabled
+	> claim_multi_currency_account_enabled
+	> claims_ocr_enabled
+	> policies_enabled
+	> multi_level_claim_review_enabled
