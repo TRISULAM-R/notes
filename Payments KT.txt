@@ -1,0 +1,15 @@
+Aspire is an fintech firm which provifes financial services for the business , that specializes in providing financial services and solutions tailored to the needs of small and medium-sized businesses (SMBs). 
+
+Aspire provides Business accounts , and cards to the customers or I can say owners to maintain their Business expenses.
+
+Aspire provides debit account - Multi Currency Account so they can do transcation esaily accross the world .
+
+Basically there are 3 verticals
+1. Access - Access deals with the On-boarding process like providing security, 2FA, Verification of KYB/KYC
+2. Payments - Payments deals with accounts and transactions
+3. Saas - deals with Budget and claims
+
+Payments
+ 	
+	Scheduled transfers => recurring transfer
+
