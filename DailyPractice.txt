@@ -1,0 +1,112 @@
+Array & Hashing
+These are the MOST asked in QA/SDET interviews.
+1.	Two Sum - completed
+2.	Best Time to Buy and Sell Stock – 
+public static int maxProfit(int[] prices) {
+        int maxProfit =0, minProfit =0;
+        for(int i=0; i<prices.length;i++)
+        {
+            for(int j=i+1;j<prices.length;j++)
+            {
+                if(prices[i] > prices[j])
+                {
+                    break;
+                }
+                minProfit = prices[j]-prices[i];
+                if(minProfit>maxProfit)
+                {
+                    maxProfit=minProfit;
+                }
+            }
+        }
+        return maxProfit;
+    }
+3.	Concatination of Array
+public static int[] getConcatenation(int[] nums) {
+        int len = nums.length*2;
+        int[] ans = new int[len];
+        int j=0;
+        for(int i=0; i<len; i++)
+        {
+            System.out.println(nums.length-1+" "+j);
+            ans[i]=nums[j];
+            if((nums.length-1) == j)
+            {
+                System.out.println("Entering in if");
+                j=0;
+            } else {
+                 j++;
+            }
+        
+        }
+        return ans;
+    }
+4.	Shuffle the Array
+public static int[] shuffle(int[] nums, int n) {
+        int[] arr = new int[nums.length];
+        int k=0;
+        for(int i=0; i<nums.length; i++)
+        {
+            if(i%2==0)
+            {
+                arr[i]=nums[k];
+                k++;
+            } else {
+                arr[i]=nums[n];
+                n++;
+            } 
+        }
+        return arr;
+    }
+5.	Contains Duplicate
+6.	Valid Anagram
+7.	Intersection of Two Arrays
+8.	Remove Duplicates from Sorted Array
+9.	Majority Element
+10.	Plus One
+11.	Move Zeroes
+12.	Single Number
+________________________________________
+🔤 Strings (Very Common for SDET)
+1.	Valid Palindrome
+2.	Longest Common Prefix
+3.	Reverse String
+4.	Reverse Words in a String
+5.	Isomorphic Strings
+6.	Ransom Note
+7.	First Unique Character in a String
+________________________________________
+🔄 Two Pointers
+1.	Merge Sorted Array
+2.	Remove Element
+3.	Palindrome Linked List (easy but commonly asked)
+________________________________________
+🧮 Math & Logic
+1.	Fizz Buzz
+2.	Climbing Stairs
+3.	Power of Two
+4.	Counting Bits (easy logic)
+________________________________________
+🧱 Stacks / Queues
+(Important because automation often checks parentheses/brackets)
+1.	Valid Parentheses
+2.	Min Stack (easy-medium but very common)
+________________________________________
+🌳 Trees (small but important)
+Interviewers love to check recursion with these.
+1.	Maximum Depth of Binary Tree
+2.	Symmetric Tree
+3.	Path Sum
+________________________________________
+📌 Most Frequently Asked Across Companies
+If you want just the top 10 must-do:
+1.	Two Sum
+2.	Valid Parentheses
+3.	Best Time to Buy and Sell Stock
+4.	Valid Palindrome
+5.	Merge Sorted Array
+6.	Contains Duplicate
+7.	Majority Element
+8.	Reverse Linked List
+9.	Climbing Stairs
+10.	Move Zeroes
