@@ -1,0 +1,30 @@
+Finom Round 1 : Panel -> Anirudh
+
+1.Introduction
+2.About framework]
+3.how many team members in team
+4.Do you also have experience into manual testing? Anywhere you perform manual testing as well?
+5.So if you need to divide your percentage between manual and automation, what it will be? Like in terms of let's say you are 100% between 100%
+6.which team exactly you were in?
+7.Can you share roughly how many automation test cases (frontend and backend) you’ve implemented while leading your team?
+8.Can you share two automation problems you solved — maybe AI-based or internal tools — that helped unblock or save time for the manual team?
+9.At what stage are you mocking the responses, and how are you handling those mocked responses?
+10.If you have documentation and 3rd party response which reference you will take for mocking?
+11.How would you automate and mock the gateway response for a positive deposit flow — for example, adding ₹10 to a wallet using a credit card — to simulate successful debit from the bank and credit to the wallet?
+12.Can you explain the Jenkins pipeline you set up — the steps you defined, how you scheduled it, and how you ensured its accuracy?
+
+Round 2 : Shivakumar
+1.Introduction
+2.About oops
+3.How did u implement the oops in your project?
+4.what is method overrloading and overriding?how did you used in your project?
+5.how did you implement the abstraction in project?
+6.what collection you used ?
+7.diff b/w treeset and hashset?
+8.String programs
+
+Round 3 : Anirudh
+1.String program i/p = "HelLo wOrLd"--> o/p 4(capital latter)
+2. same input find the duplicate 
+3.How would you automate a positive purchase flow on webka.com — searching “iPhone 16,” selecting from suggestions, verifying the product on the PLP, adding it to cart, and completing the order with saved address and payment?
+Explain your test design, folder structure, utilities, browser handling, and overall framework setup for this scenario.?
