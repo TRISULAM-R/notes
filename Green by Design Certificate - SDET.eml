@@ -1,0 +1,210 @@
+Received: from PR3PR06MB6651.eurprd06.prod.outlook.com (2603:10a6:102:6d::23)
+ by HE1PR0602MB3610.eurprd06.prod.outlook.com with HTTPS; Thu, 25 Jul 2024
+ 07:24:47 +0000
+Received: from AS4P251CA0009.EURP251.PROD.OUTLOOK.COM (2603:10a6:20b:5d2::20)
+ by PR3PR06MB6651.eurprd06.prod.outlook.com (2603:10a6:102:6d::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7784.19; Thu, 25 Jul
+ 2024 07:24:44 +0000
+Received: from AMS0EPF000001B5.eurprd05.prod.outlook.com
+ (2603:10a6:20b:5d2:cafe::96) by AS4P251CA0009.outlook.office365.com
+ (2603:10a6:20b:5d2::20) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7784.20 via Frontend
+ Transport; Thu, 25 Jul 2024 07:24:44 +0000
+Received: from esa15.hc834-32.eu.iphmx.com (194.165.193.197) by
+ AMS0EPF000001B5.mail.protection.outlook.com (10.167.16.169) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7784.11 via Frontend Transport; Thu, 25 Jul 2024 07:24:44 +0000
+Received: from smtp-250-38.fra1.qemailserver.com ([98.97.250.38])
+  by esa15.hc834-32.eu.iphmx.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 25 Jul 2024 07:24:43 +0000
+From: Qualtrics Survey Software <noreply@qualtrics-survey.com>
+To: Trisulam R <Trisulam.R@amdocs.com>
+Subject: Green by Design Certificate - SDET
+Thread-Topic: Green by Design Certificate - SDET
+Thread-Index: AQHa3mO6MX/5mmfPAE2VrGUw2SgK2w==
+Date: Thu, 25 Jul 2024 07:24:43 +0000
+Message-ID: <802323181.3752763.1721892283295@54780a8b1939>
+Reply-To: Qualtrics Survey Software <noreply@qemailserver.com>
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthSource: AMS0EPF000001B5.eurprd05.prod.outlook.com
+X-MS-Has-Attach: 
+X-MS-Exchange-Organization-Network-Message-Id: 9d8fb6c1-6e1c-4bb8-ccd9-08dcac7adb32
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+received-spf: None (esa15.hc834-32.eu.iphmx.com: no sender  authenticity
+ information available from domain of
+  postmaster@smtp-250-38.fra1.qemailserver.com) identity=helo;
+  client-ip=98.97.250.38; receiver=esa15.hc834-32.eu.iphmx.com;
+  envelope-from="bounces@bounces.fra1.qualtrics-survey.com";
+  x-sender="postmaster@smtp-250-38.fra1.qemailserver.com";
+  x-conformance=spf_only
+x-ms-exchange-organization-originalserveripaddress: 10.167.16.169
+x-ms-exchange-organization-originalclientipaddress: 194.165.193.197
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info: =?Windows-1252?Q?9CPespSZqtzp9dwmKPdwaOn6VkfPXyiJkFaGSVy+5XZzKKJLeqPdGP0o?=
+ =?Windows-1252?Q?knQwiKJK4KdCa7L6lZqWrTcYGO60FPNuG+3eFDY3oIFbchMmgcTWmzGl?=
+ =?Windows-1252?Q?kJniDp+SKGZBcNTGSPi4oQqODyllUD7y/e7LlCGAnEMPpWn3TfFgzRcF?=
+ =?Windows-1252?Q?4Xh2USbxQHH+ck9cHWw1sanhA05CTXaYI+nIG+a6l1BBNr2ZgzEXCQG6?=
+ =?Windows-1252?Q?2ADy7Z7dmr5O5WaTyH8JYSDyn2nTaSZvT3tKDT8koDKuBi4POioUvCK2?=
+ =?Windows-1252?Q?DdBp0NBGBkFoZxuzYjPcE+KujYdoXRVWj/hCzPbr5VidlVV0qS71YKsN?=
+ =?Windows-1252?Q?XcEmNZS6IsXYRANPdeTVJ14iM9e5C0YTZxjzYARV2vtQH5KmXapD6qv/?=
+ =?Windows-1252?Q?OcTDpNKo6BgLKUQj8bFtrScI5p/c/BF6SG4/BTwVdSmrla2Xcl7Bd8sh?=
+ =?Windows-1252?Q?H/IpVx2mMBTyjikX8n4dVHfQowUNUiEn0wWzgnQ8TJzQ2Xf8ibUlRAOp?=
+ =?Windows-1252?Q?aNY4XaKdPOunKKyMjTpqx/1XcnMl8XfOgEgjMXhmz1xSSl5mYVi6EpXY?=
+ =?Windows-1252?Q?T8c0l0m5oIsvjlPFqQtV2MIh66rU00zF4fQWebsi7wPDSExgYVWCzb4z?=
+ =?Windows-1252?Q?dTTNm95v+zKiVV6cmYs8beu+bAY2j2bZh+19uqbBZnMQq9pN8lHzhLJ8?=
+ =?Windows-1252?Q?//jRU7wHluT9a4FG7PO5tbpe5BiLLZv8KuTcMzUkZWbPNjizZ9CQjCsM?=
+ =?Windows-1252?Q?xHguuHJAKbajffEpXL4pRAel7qRFMb2iTdgHojS/C9GjGuREw0C0dZRX?=
+ =?Windows-1252?Q?1K/eG8085NeqxuhBDJKwQrmoAx0yeyx7aBy63ZfXIPBLLiUmlelDS3tb?=
+ =?Windows-1252?Q?VzsTv31MKtoI1LIXSg84LL7OY6TvOJftAQyANusuydL0O1Tild/bk7Vy?=
+ =?Windows-1252?Q?YRLIS7cGjGs9R6h/AwTPOMd8xUmXqjNm8Wm3LeNGTIeeq2QQFMKcTtFa?=
+ =?Windows-1252?Q?17M3v7Injh0LfahsJ80coKUcxPGhDvjttH4Q4kEze//r/JuuraTcy4u1?=
+ =?Windows-1252?Q?PtS9SEdzuPa8ISrLzo6KsbRuIXVD5R4iesbhMaIyqZmJLIuzhxhh1SP3?=
+ =?Windows-1252?Q?j9xBoEyyoVQoCiFr9lkdObtysXccJQ+Bq7aucP13VTK5nW7ccsmIuhq6?=
+ =?Windows-1252?Q?pZ1aIl/oAj7vUA06ed52h09EKkkqT44P9wDcbD78QWR6jAj44rNzSGQK?=
+ =?Windows-1252?Q?J7WbkHsLZ9kZhTW6h2zVWOhcXL9xRywqZm8jl+SD6lij77QaG9XporqW?=
+ =?Windows-1252?Q?wJMj0aLcmdIfjtLTtu+S4r4E5aBhNejVnL95iPOAwRggvBtbe6MDo8/P?=
+ =?Windows-1252?Q?Tp+msATduBBmbgl1D9roYfDL7QsIGmJcG3ZRKHf0E5t5XtqcqKLy6L93?=
+ =?Windows-1252?Q?ZKtYqxTgoVqE3kpUpAiaxfvyKBbgEWsEY4DPpHNT9fodgl3t+BR13UIN?=
+ =?Windows-1252?Q?+ZiAwktLBYhl4srkEl1pzDB4/KrHvsX7Ovibu/8IB8hrOTOGaoTmBALl?=
+ =?Windows-1252?Q?zZZWF8bSzM5KaH+k0/r8lUhYGO+NeZA5X6qM01269GHd0hL5K35uyQe+?=
+ =?Windows-1252?Q?wiwxxu499qxUmjOEKbw2LnYZyQjwyRnv3uPQoi+fxkjyiVollzj+sg9K?=
+ =?Windows-1252?Q?Kua40mYTHLS647egcS8LuwFmIeKxaO/D4Sn8baKd3Ozxgvz6OvDBvAQw?=
+ =?Windows-1252?Q?sbQxY2lvScR155Hssf3DF26r8vLshon2WCSduERFOiVaZJ8QIWH8llSM?=
+ =?Windows-1252?Q?51H1hhzKJmai3hC2yXvpWZQVv0j+Xxg+MROzy/3KEuLu3GBJT2/ZfHfK?=
+ =?Windows-1252?Q?+PzDve+VJCEZVT72xtL//Y7p6yChh905jrE8m906YseMHC4eGjJ5AidF?=
+ =?Windows-1252?Q?QyhGULA2Cz3cHneIHaYeGOwFk53ulz0fukvVCUP7+Sk4fGQJXehJ8U+R?=
+ =?Windows-1252?Q?c4bpupaAr6PdayS+GARLIqaN75xgK1ULstLRpCarchdYveoITgxfHlZT?=
+ =?Windows-1252?Q?XTAyoU65u1oCrqOw0Kg9Vh1IS2Q+vMhxBSbtUVzpesNv0nZ7MtI649ic?=
+ =?Windows-1252?Q?RwSFEc8H/4eKZqnF6UES4yXJ+2eK4e+EcmM2+c1o4mM/+GsPE1F8VtPK?=
+ =?Windows-1252?Q?fIc0XsFCdwBXOEMTflUJgRHY482TgYLL4uJH1OCVIZrU6S5Mfl+SiT2K?=
+ =?Windows-1252?Q?PyaMmpjH21eKkW1awPaidjN2/Oj4u1cNuT+Sf9sPdTmQwJ7yBUHRT61j?=
+ =?Windows-1252?Q?qLgDDdwnQNHDWu8ShEuzTTn/Kii0mfx6h6vxkAFIGLTi+IORzI33Dvoe?=
+ =?Windows-1252?Q?vFoZeKgVUqmdUw=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_8023231813752763172189228329554780a8b1939_"
+MIME-Version: 1.0
+
+--_000_8023231813752763172189228329554780a8b1939_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+        You don't often get email from noreply@qualtrics-survey.com. Learn =
+why this is important<https://aka.ms/LearnAboutSenderIdentification>
+
+CAUTION: This email is from an external source. Please don=92t open any unk=
+nown links or attachments.
+View Certificate Instructions .pdf<https://eur01.safelinks.protection.outlo=
+ok.com/?url=3Dhttps%3A%2F%2Famdocsemp.qualtrics.com%2FCP%2FFile.php%3FF%3DF=
+_j0Ra7zMRaa96hWn&data=3D05%7C02%7CTrisulam.R%40amdocs.com%7C9d8fb6c16e1c4bb=
+8ccd908dcac7adb32%7Cc8eca3ca127646d59d9da0f2a028920f%7C0%7C0%7C638574890874=
+348652%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6=
+Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3Da1kdLOglTaZTiQCo24jOoLkcc095VEX=
+ljEmQP%2Bf3LZ8%3D&reserved=3D0>  <https://amdocsemp.qualtrics.com/ControlPa=
+nel/Graphic.php?IM=3DIM_GohOrS4AaqraMSe>
+July 25, 2024
+
+
+Certification of Completion
+This certificate verifies
+
+
+Trisulam R
+has successfully met the requirements of a
+
+
+Green By Design SDET
+
+--_000_8023231813752763172189228329554780a8b1939_
+Content-Type: text/html; charset="Windows-1252"
+Content-ID: <B60F5643BA72DB4BA78BDFEFB5474008@eurprd06.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D"cellpadding:0;border:0;cellspacing:0;display:table;width:100%;table-la=
+yout:fixed;border-collapse:seperate;float:none;" align=3D"left">
+<tbody style=3D"display:block;">
+<tr>
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D"padding:7px 2px 7px 2px;background-color:#A6A6A6;vali=
+gn:middle">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D"width:100%;background-color:#EAEA=
+EA;padding:7px 5px 7px 15px;font-family:wf_segoe-ui_normal,Segoe UI,Segoe W=
+P,Tahoma,Arial, sans-serif;font-size:12px;font-weight:normal;color:#212121;=
+text-align:left;word-wrap:break-word;">
+<div>You don't often get email from noreply@qualtrics-survey.com. <a href=
+=3D"https://aka.ms/LearnAboutSenderIdentification">
+Learn why this is important</a></div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D"width:75px;backgrou=
+nd-color:#EAEAEA;padding:7px 5px 7px 5px;font-family:wf_segoe-ui_normal,Seg=
+oe UI,Segoe WP,Tahoma,Arial, sans-serif;font-size:12px;font-weight:normal;c=
+olor:#212121;text-align:left;word-wrap:break-word;align:left">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div style=3D"color:#000; background-color:#FFEB9C; width:100%; border: 1pt=
+ solid #9C6500; padding:2pt; font: 10pt/12pt Calibri, Helvetica, san-serif;=
+ text-align: left;">
+<span style=3D"color:#9C6500; font-weight:bold;">CAUTION:</span> This email=
+ is from an external source. Please don=92t open any unknown links or attac=
+hments.</div>
+<div>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"border-collapse: collapse;" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"position: relative;"><a href=3D"https://eur01=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Famdocsemp.qualtrics.=
+com%2FCP%2FFile.php%3FF%3DF_j0Ra7zMRaa96hWn&amp;data=3D05%7C02%7CTrisulam.R=
+%40amdocs.com%7C9d8fb6c16e1c4bb8ccd908dcac7adb32%7Cc8eca3ca127646d59d9da0f2=
+a028920f%7C0%7C0%7C638574890874348652%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wL=
+jAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdat=
+a=3Da1kdLOglTaZTiQCo24jOoLkcc095VEXljEmQP%2Bf3LZ8%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://amdocsemp.qualtrics.com/CP/File.php?F=3DF_j0Ra7zMRaa96hW=
+n" shash=3D"FLNZpCYpDoLfYT22OZ0VvSqewy0L1L0h12poDw/olD88mCv9cVxymf6jdwiJQgX=
+oBrX1dSFXylcxR9jGMAd67eT7s9yQ7tI+m16VH8lQ3fz8dIMEsiqT19VEDOvQb09xE3is3H0Hjb=
+6Io4XQTysqZvLEcQFsx53lxqfBQ0DWoW8=3D">View
+ Certificate Instructions .pdf</a> <img alt=3D"" src=3D"https://amdocsemp.q=
+ualtrics.com/ControlPanel/Graphic.php?IM=3DIM_GohOrS4AaqraMSe" style=3D"dis=
+play: block; max-width: 600px; margin: 0px auto; width: 650px; height: 550p=
+x;">
+<div style=3D"position: absolute; top: 20%; left: 32%; transform: translate=
+(-20%, -20%); color: white; font-size: 24px; text-shadow: rgb(0, 0, 0) 2px =
+2px; text-align: center;">
+<span style=3D"font-size: 11px;">July 25, 2024</span><br>
+<br>
+<br>
+<span style=3D"font-size: 35px;"><strong>Certification of Completion</stron=
+g></span><br>
+<span style=3D"font-size: 16px;">This certificate verifies</span><br>
+<br>
+<br>
+<span style=3D"font-size: 35px;"><strong>Trisulam R</strong></span><br>
+<span style=3D"font-size: 16px;">has successfully met the requirements of a=
+</span><br>
+<br>
+<br>
+<span style=3D"font-size:29px;">Green By Design SDET</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
+
+--_000_8023231813752763172189228329554780a8b1939_--

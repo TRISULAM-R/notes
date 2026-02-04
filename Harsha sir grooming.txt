@@ -1,0 +1,6 @@
+Harsha sir grooming
+========================
+
+Challenges that you faced?
+	Technical - File upload - instead of input tag > div tag -> so communicated with the developer & 			it was resolved in the next build.
+	Non Technical - Missing steps in test rail, Down time (have to achive our target).

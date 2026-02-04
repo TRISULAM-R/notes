@@ -1,0 +1,81 @@
+Self Introduction
+=====================
+
+Hi I am Trisulam, I have 4 years of work experience in Software testing. I've been working as an Sr.Test Engineer in Test yantra software solutions pvt. ltd. I've worked on couple of domains like CRM, e-commerce & my recent project that I worked was Fin-Tech domain. I have 2.4 years of experience in Test Automation and rest with Manual Testing. I have experience in UI Automation using Selenium with Java with very good understanding of the framework with TestNG annotations, assertions, and logs. I Also posses API Automation with RestAssured by executing the request and validating the response.I've also familier with GitHub & Jenkins. In recent project the major roles & responsibilities includes: Creation of POM pages where we would find elements with diffrerent locator techniques, Writing application specific methods for the page
+Creating automation scripts, Execution of the script locally & in Jenkins. Raising the PR getting it reviewed with the consern team member. Also involved in Analyzing the report, fixing the issues. Also participated in all the Sprint activities including Daily standup meeting , sprint planning meeting.
+
+=== new ====
+
+Hi, I’m Trisulam. I have 4.6 years of experience in Software Testing, currently working as a Senior Test Engineer at Test Yantra Software Solutions Pvt. Ltd. I’ve worked across domains like CRM, e‑commerce, FinTech, and most recently Telecom Promotions. I have experience in both Web and API automation — for Web, I’ve worked with Selenium and Java with a strong understanding of frameworks, TestNG annotations, assertions, and logging; and for APIs, I’ve used RestAssured to validate requests and responses. I’m also familiar with GitHub, GitLab, JIRA, and Jenkins for version control, issue tracking, and CI/CD. In my recent project, my responsibilities included designing and maintaining automation test suites for APIs and microservices, creating mocks for dependent systems, developing and executing test cases, raising merge requests in GitLab, and reviewing them with team members. I was also actively involved in Agile ceremonies such as daily stand‑ups and sprint planning. Overall, I bring a strong mix of automation expertise, domain knowledge, and collaborative Agile experience
+
+==========
+Hi I am Trisulam, I have 4.6 years of work experience in Software testing. I've been working as an Sr.Test Engineer in Test yantra software solutions pvt. ltd. I've worked on multiple domains like CRM, e-commerce, Fin-Tech & my recent project that I worked was Telecom Promotional domain. I have experience in both Web & API Automation. Web Automation using Selenium with Java with very good understanding of the framework with TestNG annotations, assertions, and logs. API Automation with RestAssured by executing the request and validating the response. I've also familiar with tools like GitHub, GitLab, JIRA & Jenkins. In recent project the major roles & responsibilities includes: participating in HLD and LLD reviews, designing and maintaining automation test suites for APIs and microservices, creating mocks for dependent systems. Developing Test cases, Execution of test cases. Raising Merge request in the GitLab and review it with team Members. Also participated in all the Sprint activities including Daily standup meeting , sprint planning meeting.
+
+
+ Explain your project
+=========================
+
+	The latest project that I worked on is AspireApp which is a fin-Tech domain for Singapore client for past 5 months. It is an B2B application. Technologies used in my application is for FrontEnd - html, css, react.js. For backend we used java and spring-boot for backend. Aspire provides payment service to the customers who are SME(Small & Midsized Enterprises) and Start-ups. Basically Aspire offers Multi Currency account(MCA) debit account and allowing business to send money in various currencies. Basically we have 3 verticals in this project 
+	1. Access - Deals with the onboarding process, KYC/ KYB verification
+	2. Treasury - Deals with providing debit accounts & payment methods
+	3. Spend - Deals with the Budget, Bookkeeping, Cards, claims, ect..
+	
+	During my tenure I've worked on Treasury Vertical. Basically Treasury Team deals with providing debit accounts, and payment options. Where maker can submit a transaction where as checker can approve the transaction. Here maker is nothing but Finance Submitter who can only submit the transaction, without approval from checker who is nothing but Finance Transfer the transaction won't be initiated. In this majorly I have worked in TreasuryTeam2 which deals with BulkTransfers. Doing more than 1 transaction by submiting the csv file which contains all the trasaction details. 
+
+
+	
+	I have been working for the past 16 months on the T‑Mobile Telecom Promotions project, which is a B2C application built on a microservices architecture using Java and Spring Boot. The purpose of this system is to deliver the most suitable promotions to customers, either as device promotions—offers tied to purchasing a device—or service promotions—offers tied to rate plans or services. Within T‑Mobile, three major systems interact: OFSLL, which manages customer equipment details; SAMSON, which stores customer information such as SOC codes and subscriber data; and the Eligibility Engine, a legacy system that evaluates customer profiles and assigns the best eligible promotion. I primarily worked on the Eligibility Engine, where the data flow begins with a request from Deep.io events, which then passes through the OFSLL event processor, Daemon, Decision Persistence Adapter (DPA), Decision Persistence Service (DPS), Decision Notification Service (DNS), and DPS Feedback Service, before reaching the External Event Generator (EEG). 
+	
+Roles and Responsibilities
+============================
+
+	As an SDET, my responsibilities included designing and maintaining automation test suites for APIs and microservices, validating complex promotion assignment logic, creating mocks for dependent systems, and integrating tests into the CI/CD pipeline. I also performed functional, regression, and performance testing to ensure the system could handle high‑volume promotional campaigns. One of the key challenges was working with the legacy Eligibility Engine, which had complex business rules and limited documentation, and I addressed this by collaborating closely with developers and business analysts to reverse‑engineer rules and build comprehensive test coverage. Through automation and continuous integration, I was able to significantly reduce manual effort, improve release confidence, and support timely delivery of critical telecom promotions such as seasonal campaigns.
+
+
+FrameWork explanation
+=======================
+
+	This project follows Test- Driven Development(TDD) approach with Hybrid framework. Name of this Framework is Thanos in this framework we can perform all the automation tasks for front end and backend services. It is an hybrid framework created using Data-Driven, Modular driver & Method driven methodologies. It is created using the latest Selenium feature with Java, TestNG and maven for Web based automation, Integrated with Appium for Mobile application automation and Rest assured for Api automation. we use TestNG annotations and assertions, and Log4j for logging.
+	Framework Structure consits of 
+		Generic Libraries
+		Helper Classes
+		POM pages
+		Modular Test scripts 
+		Parameters - common data in properties file
+		TestData - where we store all our test data in the form of csv file.
+	
+			
+	In Generic Libraries we have methods with functionalities such as test set-up, data generation, ect.
+	In Helper class we can create a function where it is interactiong whith more than 1 page.
+	In POM pages - storing all the elements, writing application specific methods in this class.
+	In src/test/java/automation we used to store our test scripts in the concern team, using TestBase which is class conatains all the configuration annotations.
+	In Parameters we used to store the common data in the properties file
+	TestData is the folder where we used to store out testData in the form of csv files.
+
+
+	
+
+
+	This project follows Test-Driven Development(TDD) approach with Hybrid framework. It is a combination of Data-driven,Modular driven & method Driven. In this framework we can perform both all automation tasks for fort-end and backend services. It is created using the latest selenium feature with Java, TestNg and maven for web based automation , integrated with Rest assured for Api automation. We Use testNg annotations and assertions, and Log4j for logging. 
+	Framework Structure consists of 
+	   src/main/java
+		Generic Libraries (Util) - 
+			where we store reusable methods in the respective classes such as Config class where we Initialize the testConfig like browser, environment, url, securityKey, passwords ect. using the config.properties the properties will be initialized for the test scripts.
+			Likewise we have separate utility class for DataBase Connectivity, ExcelUtility, ect.
+		Pages - All the POM pages are stored in this package
+		BaseClass - All the configuration Annotations
+
+	   src/test/java
+		test cases Module wise
+	   src/test/resources
+		jsonTemplate
+		testData
+		
+
+
+
+Challenges you faced
+=====================
+	low seiverity and high priority defect -> when a field called TotalCreditApplied is added and at the time of new enrollment the requirement 
+	
+	high severity and low priority defects -> when the promotion is not getting applied to a specific costomer which does not have much flow for it.  like military/veterans

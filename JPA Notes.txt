@@ -1,0 +1,33 @@
+JPA
+
+-Hibernate handles all of the low level SQL\
+- Minimize the amount of JDBC code you have to develop
+- Provides ORM (Object-to-Relational Mapping)
+
+
+ORM - 
+<Student>
+- id : int
+- firstName : String
+- lastName : String
+
+
+Saving Java Object with JPA
+
+Student theStudent = new Student("Paul", "Doe", "paul@luv2.com);=
+entityManager.persist(theStudent);
+
+
+// Retrieving a data using primary key
+
+int theId = 1;
+Student myStudent = entityManager.find(Student.class, theId);
+
+// Returens list of Obbjects 
+TypedQuery<Student> the Query = entityManager.createQuery("from Student", Student.class);
+List<Student> listOfStudents = theQuery.getResultList();
+
+
+How does Hibernate / JPA are related to JDBC?
+	code ------> JPA/ Hibernate -----------> DB
+	     <------		    <-----------
