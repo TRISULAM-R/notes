@@ -1,0 +1,1270 @@
+DET-38
+RestAssured
+POJO class-->
+POJO in Java stands for Plain Old Java Object.
+It is an ordinary object, which is not bound by any special restriction.
+The POJO file does not require any special classpath. 
+It increases the readability & re-usability of a Java program.
+POJOs are now widely accepted due to their easy maintenance. They are easy to read and write. 
+A POJO class does not have any naming convention for properties and methods. 
+Generally, a POJO class contains variables and their Getters and Setters.
+*More details-->https://www.javatpoint.com/pojo-in-java
+
+->Pojo class for employee details
+public class EmployeeDetails {
+//Step1:- Declare the variable globally
+	String eName;
+	String eId;
+	int phoneNo;
+	String email;
+	String address;
+	//create the constructor for initialization
+	public EmployeeDetails(String eName, String eId, int phoneNo, String email, String address) {
+		super();
+		this.eName = eName;
+		this.eId = eId;
+		this.phoneNo = phoneNo;
+		this.email = email;
+		this.address = address;
+	}
+	
+	
+	//triggering execution during serialization or deserialization
+	public EmployeeDetails() {
+		
+	}
+	//setter and getter for access
+
+
+	public String geteName() {
+		return eName;
+	}
+
+
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+
+
+	public String geteId() {
+		return eId;
+	}
+
+
+	public void seteId(String eId) {
+		this.eId = eId;
+	}
+
+
+	public int getPhoneNo() {
+		return phoneNo;
+	}
+
+
+	public void setPhoneNo(int phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}	
+}
+-->pojo class for employee details with array
+
+public class EmployeeDataWithArray {
+	//Declare the variables globally
+   String eName;
+   String eId;
+   int[] phoneNo;
+   String eMail;
+   String address;
+ //create contrctor for initalization
+public EmployeeDataWithArray(String eName, String eId, int[] phoneNo, String eMail, String address) {
+	super();
+	this.eName = eName;
+	this.eId = eId;
+	this.phoneNo = phoneNo;
+	this.eMail = eMail;
+	this.address = address;
+
+}
+  //create constructor for serialization
+public  EmployeeDataWithArray() {
+	
+}
+//create getters and setters for access
+public String geteName() {
+	return eName;
+}
+public void seteName(String eName) {
+	this.eName = eName;
+}
+public String geteId() {
+	return eId;
+}
+public void seteId(String eId) {
+	this.eId = eId;
+}
+public int[] getPhoneNo() {
+	return phoneNo;
+}
+public void setPhoneNo(int[] phoneNo) {
+	this.phoneNo = phoneNo;
+}
+public String geteMail() {
+	return eMail;
+}
+public void seteMail(String eMail) {
+	this.eMail = eMail;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+
+-->pojo class with object
+
+public class EmployeeDetailswithObject {
+//declare variables globally
+	String eName;
+	String eId;
+	int[] pNo;
+	String[] eMail;
+	Object Spouse;
+	
+	public EmployeeDetailswithObject(String eName, String eId, int[] pNo, String[] eMail, Object spouse) {
+		super();
+		this.eName = eName;
+		this.eId = eId;
+		this.pNo = pNo;
+		this.eMail = eMail;
+		Spouse = spouse;
+	}
+	
+	public EmployeeDetailswithObject() {
+		
+	}
+
+	public String geteName() {
+		return eName;
+	}
+
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+
+	public String geteId() {
+		return eId;
+	}
+
+	public void seteId(String eId) {
+		this.eId = eId;
+	}
+
+	public int[] getpNo() {
+		return pNo;
+	}
+
+	public void setpNo(int[] pNo) {
+		this.pNo = pNo;
+	}
+
+	public String[] geteMail() {
+		return eMail;
+	}
+
+	public void seteMail(String[] eMail) {
+		this.eMail = eMail;
+	}
+
+	public Object getSpouse() {
+		return Spouse;
+	}
+
+	public void setSpouse(Object spouse) {
+		Spouse = spouse;
+	}
+	
+public class Spouse {
+String sName;
+int sPno;
+String sEmail;
+
+public Spouse(String sName, int sPno, String sEmail) {
+	super();
+	this.sName = sName;
+	this.sPno = sPno;
+	this.sEmail = sEmail;
+}
+
+public Spouse() {
+	
+}
+public String getsName() {
+	return sName;
+}
+public void setsName(String sName) {
+	this.sName = sName;
+}
+public int getsPno() {
+	return sPno;
+}
+public void setsPno(int sPno) {
+	this.sPno = sPno;
+}
+public String getsEmail() {
+	return sEmail;
+}
+public void setsEmail(String sEmail) {
+	this.sEmail = sEmail;
+}
+
+}
+-------------------------------------------------------------
+Serialization:--
+Converting java object to json or xml
+javaobject to json-->parser used -->Jackson
+
+->Serilaization of EmployeeDetails
+
+public class SerializationOfEmpDetails {
+@Test
+public void serializationEmpDeatilsTest() throws Throwable, Throwable, Throwable {
+	//Step1:- create object of pojo class
+	EmployeeDetails emp= new EmployeeDetails("Kalpana", "Tycs024", 789456, "ks@gmail.com", "Banglore");
+	//Step2:- create objcet for object mapper
+	ObjectMapper objm= new ObjectMapper();
+	//Step 3 write the value to the json file
+	objm.writeValue(new File("./EmployeeDetails.json"), emp);
+}
+
+-->Serilaization of  EmployeeDataWithArray
+
+public class SerializationOfEmpDataWithArray {
+@Test
+public void serializationOfEmpdatawitharrayTest() throws Throwable, Throwable, Throwable {
+	//create the object for pojo class
+	int[] phone= {123456,198745};
+	
+	EmployeeDataWithArray empa= new EmployeeDataWithArray("Kalpana", "Tycs024", phone, "ks@gmail.com", "banglore");
+	//create the object for object mapper
+	ObjectMapper objm= new ObjectMapper();
+	//write the value to json file
+	objm.writeValue(new File("./empDataWithArray.json"), empa);
+}
+-->Serialization of employeeDetails with object
+
+public class SerializationOfEmpDataWithObject {
+@Test
+public void serializationOfEmpDataWithObjectTest() throws Throwable, JsonMappingException, IOException {
+	//step:create the object for pojo class
+	int[] phno= {123654,987456};
+	String[] email= {"ks@gamil.com","ns@gmail.com"};
+	Spouse sp= new Spouse("xys", 951236, "xyz@gamil.com");
+	EmployeeDetailswithObject empo=new EmployeeDetailswithObject("Ks", "tysc024", phno, email, sp);
+	//step2:- create the object for object mapper
+	ObjectMapper obm= new ObjectMapper();
+	
+	
+	//step3:- write the data to json file
+	obm.writeValue(new File("./EmpDataWithObject.json"), empo);
+}
+---------------------------------------------------
+Deserialization
+
+converting json obejct to java object---> parser-- jackson
+
+->deserialization of EmployeeDetails
+
+public class DeserializationOfEmployeeDetails {
+@Test
+public void deserialisationEmpdetailsTest() throws Throwable, Throwable, Throwable {
+	//step1:- create the objcet for object mapper 
+	ObjectMapper obj= new ObjectMapper();
+	//step2:-read the value from object mapper
+	EmployeeDetails e1 = obj.readValue(new File("./EmployeeDetails.json"),EmployeeDetails.class);
+	//fetch the required value from the
+	
+	System.out.println(e1.geteName());
+	e1.getAddress();
+	e1.getClass();
+	e1.getEmail();
+}
+->deserialization of EmployeeDetails with array
+
+public class DeserializationOfEmpdetailsWithArray {
+@Test
+public void deserilaiztionOfEmpDataWithArrayTest() throws Throwable, Throwable, Throwable {
+	ObjectMapper obj = new ObjectMapper();
+	EmployeeDataWithArray Jo = 
+			obj.readValue(new File("./EmpDataWithArray.json"), EmployeeDataWithArray.class);
+	System.out.println(Jo.getAddress());
+	System.out.println(Jo.getClass());
+	 System.out.println(Jo.geteName());
+	System.out.println(Jo.geteMail());
+	 System.out.println(Jo.getPhoneNo()[1]);
+	 System.out.println(Jo.getPhoneNo()[0]);
+}
+}
+-->deserilaization of EmployeeDetailsWith object
+
+public class DeserilaizationOfEmpDataUsingObject {
+@Test
+public void deserilaizationOfEmpDataUsigObject() throws JsonParseException, JsonMappingException, IOException {
+	ObjectMapper obj= new ObjectMapper();
+	EmployeeDetailswithObject jo =
+obj.readValue(new File("EmpDataWithObject.json"), EmployeeDetailswithObject.class);
+	 //System.out.println(jo.geteName());
+	System.out.println(jo.getSpouse());
+	//System.out.println(jo.geteMail()[0]);
+}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CRUD OPERATION 
+--------------
+GET methods are read-only and safe.
+PUT and DELETE methods are idempotent: the response they return is always the same irrespective of the times the methods are invoked.
+PUT and POST operation are generally the same except for one difference that POST operation can return different results whereas PUT is idempotent.
+
+C-->create--->Http method used here is POst()----> create the new resource in server
+R--> Read---->Http method used here is Get()-----> fetch the data from the server
+U--->Update--Http method used here is put() or patch()
+      put()--> complete updation
+      Patch()---> partial updation
+D--->Delete--->Http method used here is Delete()--->Delete the resource from the server
+----------------------------------------------------
+CRUD OPERATION WITHOUT BDD--->
+
+C-->create--->Http method used here is POst();
+
+public class AddProject {
+@Test
+public void addProjectTest() {
+	//jason body
+			JSONObject obj = new JSONObject();
+			obj.put("createdBy", "Kalpana_Shetty");
+			obj.put("projectName", "FirmCA18");
+			obj.put("status", "created");
+			obj.put("teamSize", 5);
+			
+			//preconditions(body and content type)
+			RequestSpecification reqSpec = RestAssured.given();
+			reqSpec.body(obj);
+			reqSpec.contentType(ContentType.JSON);
+			
+			
+			//action
+			Response response = 
+					reqSpec.post("http://localhost:8084/addProject");
+			//validation
+			ValidatableResponse validate = response.then();
+		validate.assertThat().contentType(ContentType.JSON);
+			validate.assertThat().statusCode(201); 
+			validate.log().all();}
+}
+-----------------------------------------
+R--> Read---->Http method used here is Get()
+
+getsinlge project
+
+public class GetSingleProjectTest {
+@Test
+public void getSingleProjectTest() {
+	Response response = RestAssured.get("http://localhost:8084/projects/TY_PROJ_1012");
+  ValidatableResponse valResp = response.then();
+  valResp.assertThat().contentType(ContentType.JSON);
+  valResp.assertThat().statusCode(200);  
+  valResp.log().all();
+}
+}-------------------------
+get all project
+
+public class GetAllProjectsTest {
+@Test
+public void getAllProject() {
+	Response response = RestAssured.get("http://localhost:8084/projects");
+
+System.out.println(response.getContentType());
+ValidatableResponse validate = response.then();
+validate.assertThat().contentType(ContentType.JSON);
+validate.log().all();
+
+//response.prettyPrint();
+//response.prettyPeek();
+}
+}
+---------------------------------
+update project
+
+public class UpdateProjectTest {
+@Test
+public void updateProjectTest() {
+	JSONObject js= new JSONObject();
+	js.put("createdBy", "Kalpana_Shetty");
+	js.put("projectName", "TY-Miko-1");
+	js.put("status", "Completed");
+	js.put("teamSize", 10);
+	
+	RequestSpecification reqSpe = RestAssured.given();
+	reqSpe.body(js);
+	reqSpe.contentType(ContentType.JSON);
+	
+	Response response = reqSpe.put("http://localhost:8084/projects/TY_PROJ_1624");
+	String ct = response.getContentType();
+	System.out.println(ct);
+	ValidatableResponse valRes = response.then();
+	valRes.assertThat().contentType(ContentType.JSON);
+	valRes.assertThat().statusCode(200);
+	valRes.log().all();
+	
+}-----------------------------
+delete project
+
+public class DeleteProjectTest {
+@Test
+public void deleteProjectTest() {
+	Response resp = RestAssured.delete("http://localhost:8084/projects/TY_PROJ_1013");
+   ValidatableResponse valResp = resp.then();
+   valResp.assertThat().statusCode(204);
+   valResp.log().all();
+
+}
+
+
+******************************Disadavntage of doing crud operation without bdd approach:-
+                                                     Multiple time unnessaray variable creation
+---------------------------------------------------------------------------------------------------
+CRUD operation with BDD Appraoch
+--------------------------------
+Given-->Precondition
+When--->Action
+then--->VAlidation
+
+
+1.
+public class AddProjectTest {
+@Test
+public void createProjectTest() {
+	JSONObject jobj= new JSONObject();
+	jobj.put("createdBy", "Kalpana");
+	jobj.put("projectName", "anything-1");
+	jobj.put("status", "Created");
+	jobj.put("teamSize", 10);
+	baseURI = "http://localhost";
+	port = 8084;
+	
+	
+	given()
+	     .body(jobj)
+	     .contentType(ContentType.JSON)
+.when()
+        .post("/addProject")
+   .then()
+         .assertThat()
+             .contentType(ContentType.JSON).log().all();
+
+
+2.
+
+public class DeleteProjectTest {
+@Test
+public void deleteProjectTest() {
+	
+ baseURI="http://localhost";
+ port=8084;
+ when()
+ .delete("/projects/TY_PROJ_1012")
+ .then()
+ .assertThat()
+ .contentType(ContentType.JSON)
+ .statusCode(204)
+ .log().all();
+ 
+}
+}
+
+3.
+
+public class GetAllProjectsTest {
+@Test
+public void getallprojectTest() {
+	baseURI="http://localhost";
+	port=8084;
+	when()
+	      .get("/projects")
+	.then()
+	      .assertThat()
+	             .contentType(ContentType.JSON)
+	             .statusCode(200)
+	             .log().all();
+	
+}
+}
+
+
+4.
+
+public class GetSingleProjectTest {
+@Test
+public void getSingleProjectTest() {
+	baseURI="http://localhost";
+	port=8084;
+	when()
+	     .get("/projects/TY_PROJ_1012")
+	.then() 
+	     .assertThat()
+	                  .contentType(ContentType.JSON)
+	                  .statusCode(200)
+	                  .log().all();
+	  
+}
+}
+
+
+
+5.
+
+public class UpdateProjectTest {
+@Test
+public void updateProjectTest() {
+	baseURI="http://localhost";
+	port=8084;
+	JSONObject jobj= new JSONObject();
+	jobj.put("createdBy", "Kalpana");
+	jobj.put("projectName", "Mission-A");
+	jobj.put("status", "Created");
+	jobj.put("teamSize", 10);
+	given()
+	      .body(jobj)
+	       .contentType(ContentType.JSON)
+	.when()
+	       .put("/projects/TY_PROJ_1012")
+     .then()
+            .assertThat()
+                      .contentType(ContentType.JSON)
+                      .statusCode(200)
+                      .log().all();
+}
+}
+---------------------------------------------------------------------------------------------------
+
+Different ways to post Request.
+1.Json Object
+2.HashMap
+3.JsonFile
+4.POJO class
+
+
+
+JSON Object--->
+
+public class PostRequestUsingJsonObjectTest {
+@Test
+public void createProjectTest() {
+	JSONObject jobj = new JSONObject();
+	jobj.put("createdBy", "Kalpana");
+	jobj.put("projectName", "anything-1");
+	jobj.put("status", "Created");
+	jobj.put("teamSize", 10);
+	baseURI = "http://localhost";
+	port = 8084;
+	
+	given()
+	     .body(jobj)
+	     .contentType(ContentType.JSON)
+.when()
+        .post("/addProject")
+   .then()
+         .assertThat()
+             .contentType(ContentType.JSON).log().all();
+}
+}
+
+
+HashMap--->
+
+public class PostRequestUsingHashMapTest {
+@Test
+public void createProjectHashMApTest() {
+	HashMap hp = new HashMap();
+	hp.put("createdBy", "Kalpana");
+	hp.put("projectName", "anything-11");
+	hp.put("status", "Created");
+	hp.put("teamSize", 10);
+	baseURI = "http://localhost";
+	port = 8084;
+	given()
+	.body(hp)
+	.contentType(ContentType.JSON)
+	.when()
+	.post("/addProject")
+	.then()
+	.assertThat().statusCode(201)
+	.and()
+	.assertThat().contentType(ContentType.JSON)
+	.log().all();
+	
+	
+	}
+
+
+--->Json file
+
+public class PostRequestUsingJsonFileTest {
+@Test
+public void  createPostTest() {
+	File file= new File("./src/test/resources/testData.json");
+	given().
+	      contentType(ContentType.JSON)
+	      .body(file)
+	  .when()
+	  .post("http://localhost:8084/addProject")
+	  .then()
+	  .assertThat()
+	  .contentType(ContentType.JSON)
+	  .and()
+	  .statusCode(201).log().all();
+	
+}
+
+---->using pojo class
+
+first create the POJO class
+
+
+
+
+
+
+public class AddProjectPOJOTest {
+String createdBy;
+String projectName;
+String status;
+int teamSize;
+
+public AddProjectPOJOTest(String createdBy, String projectName, String status, int teamSize) {
+	super();
+	this.createdBy = createdBy;
+	this.projectName = projectName;
+	this.status = status;
+	this.teamSize = teamSize;
+}
+
+
+public String getCreatedBy() {
+	return createdBy;
+}
+
+public void setCreatedBy(String createdBy) {
+	this.createdBy = createdBy;
+}
+
+public String getProjectName() {
+	return projectName;
+}
+
+public void setProjectName(String projectName) {
+	this.projectName = projectName;
+}
+
+public String getStatus() {
+	return status;
+}
+
+public void setStatus(String status) {
+	this.status = status;
+}
+
+public int getTeamSize() {
+	return teamSize;
+}
+
+public void setTeamSize(int teamSize) {
+	this.teamSize = teamSize;
+}
+
+
+----
+public class PostrequestWithPojoTest {
+@Test
+public void createProjectTest() {
+	AddProjectPOJOTest pj= new AddProjectPOJOTest("Kalpana", "rmgtyss3", "Created", 5);
+	given()
+	.contentType(ContentType.JSON)
+	.body(pj)
+	.when()
+	.post("http://localhost:8084/addProject")
+	.then()
+	.assertThat().contentType(ContentType.JSON)
+	.and()
+	.assertThat().statusCode(201)
+	.log().all();
+}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DATADriven Testing:-
+
+To perform datadriven testing in RestAssured we use POJO class and DataProvider.
+with the help of data provider we can send multiple request(or we can create multile projet) with different set of data.
+
+public class AddProjectUsingDataproviderTest {
+@Test(dataProvider = "TestBody")
+public void addProjectTest(String createdBy, String projectName, String status, int teamSize) {
+	AddProjectPOJOTest apj=new AddProjectPOJOTest(createdBy, projectName, status, teamSize);
+	given().
+	contentType(ContentType.JSON)
+	.body(apj)
+	.when().post("http://localhost:8084/addProject")
+	.then().assertThat().contentType(ContentType.JSON).and()
+	.log().all();
+}
+
+@DataProvider
+public Object[][] TestBody() {
+	Object [][] obj = new Object[2][4];
+	obj[0][0]="Kalpana";
+	obj[0][1]="TYSS-Rmg789";
+	obj[0][2]="Created";
+	obj[0][3]=5;
+	obj[1][0]="Kalpana";
+	obj[1][1]="RMG-TYss951";
+	obj[1][2]="Created";
+	obj[1][3]=12;
+	return obj;
+}
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Validation:
+-> For every request, response has to be validated in order to check the correctness of 
+   server response
+-> Rest assured also provides assertions as a inbuilt method in ValidatableResponse interface
+   then().assertThat() for response header validation
+
+-> Response Header validation:-
+   Status code and ContentType can be validated with the help of inbuilt methods
+   then().assertThat().statusCode(exp Status code)
+   then().assertThat().ContentType(Exp ContentType)
+
+-> Response Body Validation:-
+   response body has to be validated with the help of json path
+   response.jsonPath().get(json path for the required data in response)
+
+There are 2 types of response body validations:---
+
+=> Static Response validation:- when we know where exactly the required data is present 
+   in response we use static response
+   -> static response always return single value
+   -> static response always uses index
+
+public class GetAllProjectStaticValTest {
+@Test
+public void getAllProjectsTest() {
+	String expectedPname="Rmgy340";
+ Response response = when().get("http://localhost:8084/projects");
+ String actualPname = response.jsonPath().get("[0].projectName");
+ Assert.assertEquals(actualPname, expectedPname);
+}
+}
+
+=>Dynamic Response validation:
+When we dont know where exactly the expected data is present in 
+   the response we use dynamic response
+   -> Dynamic response cannot use index
+   -> Dynamic response always return a collection (multiple values).
+
+public class DynamicResPonseValTest {
+@Test
+public void getAllProjectsTEst() {
+	baseURI="http://localhost";
+	port=8084;
+	String expectpId="TY_PROJ_1628";
+	 Response res = when().get("projects");
+	 List<String> actulPid = res.jsonPath().get("projectId");
+	 Boolean flag= false;
+	 for (String aID : actulPid) {
+		 if(aID.equalsIgnoreCase(expectpId)) {
+			 System.out.println("project id is found");
+			 flag=true;
+		 }
+		
+	}
+	 Assert.assertTrue(flag);
+}
+---------------------------------------------------------------------------------------------------------------
+StatusLine Validation:-
+
+A "Status-Line" is the first line returned in the HTTP response. The status line consists of three substrings:
+
+HTTP protocol version.
+Status Code.
+Status Code’s string value.(optional)
+
+For example, when the request is successful the status line will have the value "HTTP/1.1 200 OK". Here, 
+the first part is the HTTP protocol (HTTP/1.1).
+ Next is the HTTP status code (200). 
+The third is the status message (OK).
+
+Example:-
+
+public class StatuslineValidationTest {
+@Test
+public void statusLineValTest() {
+	baseURI="http://localhost";
+	port=8084;
+	String expectStausLine="HTTP/1.1 200 ";
+	 Response res = given()
+	.get("projects");
+	 	String actualStatusLine = res.getStatusLine();
+	 	Assert.assertEquals(actualStatusLine, expectStausLine);
+	
+}
+}
+----------------------------------
+Response Header validation:-
+
+The response received from the server consists of zero or more headers along with response status and response body.
+ Each header is a key-value pair. 
+The header part of the response is used by the server 
+to send extra information which is also referred to as "Metadata" of the response.
+
+Example:-
+
+public class HeaderValidationTest {
+	@Test
+	public void validation(){
+		baseURI="http://localhost";
+		port=8084;
+		String expecContentType="application/json";
+		String expectedVary="Access-Control-Request-Headers";
+		String expectedPragma="no-cache";
+    Response response = when().get("projects");
+   String actaulContentType = response.getContentType();
+   String actaulVary = response.getHeader("vary");
+   String actualPragma = response.getHeader("Pragma");
+   response.then().log().all();
+   Assert.assertEquals(expecContentType, actaulContentType);
+   Assert.assertEquals(expectedVary, actaulVary);
+   Assert.assertEquals(actualPragma, expectedPragma);
+	}
+
+}
+-----------------------------------------------------------
+Response body validation:-
+
+Response interface contains  two methods to get the Response Body
+
+Response.body() : returns ResponseBody
+Response.getBody() : returns ResponseBody
+
+*ResponseBody interface also has a method called .asString(),  which converts a ResponseBody 
+into its String representation.
+
+public class BodyValidation {
+@Test
+public void bodyValTest() {
+	baseURI="http://localhost";
+	port=8084;
+	String expected="TY_PROJ_1014";
+	 Response res = given()
+	.get("projects");
+	// ResponseBody b3 = res.body();
+	 //System.out.println(b3);
+	 //ResponseBody b4 = res.getBody();
+	 //System.out.println(b4);
+  //String b2 = res.body().prettyPrint();
+  //pretty print will print  response body
+//	  System.out.println(b2);
+//	ResponseBody b2 = res.body().prettyPeek();
+  // pretty peak will print  response body and header
+//	System.out.println(b2);
+	 	//ResponseBody bd = res.getBody();
+	 	//System.out.println(bd);
+	//String body = res.getBody().asString();
+	//String body3 = res.getBody().toString();--->not working
+	//System.out.println(body3);
+//	  String body2 = res.getBody().prettyPrint();
+//	  System.out.println(body2);
+	//System.out.println(body);
+//	Boolean flag= false;
+//	
+//	if(body.contains(expected)) {
+//		flag=true;
+//		System.out.println("found");
+//	}
+//	Assert.assertTrue(flag);
+	
+}
+
+
+
+----------------------------------------- 
+
+Response Time validation1:-
+In order to validate response time there are  methods in restassured coming from  HAMCREST Matchers
+  where we can specify the range of values like lessThan() or greaterThan()
+
+public class ResponseTimeValidationTest {
+@Test
+public void ValRespTime() {
+	baseURI="http://localhost";
+	port=8084;
+	when().get("projects")
+	.then()
+	.assertThat().time(Matchers.lessThan(2000L), TimeUnit.MILLISECONDS);
+	//.assertThat().body("[0].projectName", Matchers.equalTo("Rmgy340"));
+}
+}
+------------------------------------------------------------------------------------------
+
+Parameters:-
+
+Parameter Types
+Swagger distinguishes between the following parameter types based on the parameter location. 
+The location is determined by the parameter’s in key, for example, in: query or in: path.
+
+->query parameters, such as /users?role=admin
+->path parameters, such as /users/{id}
+->header parameters, such as X-MyHeader: Value------->example--->https://api.github.com/users/{username}/repos
+->body parameters that describe the body of POST, PUT and PATCH requests (see Describing Request Body)
+->form parameters –   a variety of body parameters 
+used to describe the payload of requests with Content-Type of application/x-www-form-urlencoded and multipart/form-data (the latter is typically used for file uploads)
+
+
+
+=> path parameter -> associated with resource path.with the help of path parameter we can  execute same request with different endpoints
+Path parameters (pathparam) are basically part of the url itself of a web service.
+ Rest assured has ways to handle path parameters similar to query parameters.
+
+In the below url, {userid} is referred as path parameter.
+http://localhost:/api/users/{userid}
+
+Response response = given()
+          .baseUri("https://localhost")
+          .basePath("api/users")
+          .pathParam("userid", 2)
+        .when()
+          .get("/{userid}");
+
+In the above example, we have used path parameter userid and passed value 2. 
+Rest Assured’s flexibility of handling parameters helps us to iterate test cases with multiple sets of data.
+
+public class PathParameterTest {
+@Test
+public void pathParameter(){
+	String proId="TY_PROJ_804";
+	
+	given().pathParam("projectID", proId)
+	//when().delete("http://localhost:8084/projects/{projectID}")
+	.when().delete("http://localhost:8084/projects/{projectID}")
+
+	.then()
+			.assertThat().statusCode(204).log().all();
+}
+}
+
+-----
+Query parameter:-
+
+-->What are Query String Parameters?
+You might not always want to fetch all the results corresponding to a request. 
+There may be scenarios where you need to fetch only a few or a single record. 
+In such cases, query string parameters play an important role.
+ These are appended at the end of the URL after using a '?'.
+
+example
+public class QueryParameterTest {
+@Test
+public void QueryparameterTest() {
+	given()
+	.queryParam("page", 2)
+	.when()
+	.get("https://reqres.in/api/users")
+	.then().log().all();
+	//query parameter we dont have to mention in the uri , 
+	//it wil automatically take that
+}
+-------------------------
+Form Parameters:-
+                     associated with request body/form data
+                     execute same request with different form data
+
+  [Form parameters are used to describe the payload of requests with Content-Type of:
+application/x-www-form-urlencoded (used to POST primitive values and arrays of primitive values).
+multipart/form-data (used to upload files or a combination of files and primitive data).
+That is, the operation’s consumes property must specify one of these content types.
+ Form parameters are defined as in: formData.
+ They can only be primitives (strings, numbers, booleans) or arrays of primitives (meaning you cannot use a $ref as the items value).
+ Also, form parameters cannot coexist with the in: bodyparameter, because formData is a specific way of describing the body.]
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Request Chaining:-
+
+ capturing the data from one response and providing it as a 
+                   parameter or variable or input to another request is called as
+                   request Chaining
+-> It will avoid dependencies with existing data,
+-> For every dependent request like GET(), PUT(), PATCH(), DELETE(), we can create the data
+   using POST() and then we can perform the required action.
+example
+public class PostAndDeleteProjectTest {
+@Test
+public void postAndDelteTest() {
+	baseURI = "http://localhost";
+	port = 8084;
+	AddProjectPOJOTest pojo=new AddProjectPOJOTest("K-s", "chandayan-1", "created", 512);
+	Response response = given()
+	.body(pojo)
+	.contentType(ContentType.JSON)
+	.when()
+	.post("/addProject");
+	String proId = response.jsonPath().get("projectId");
+	given()
+	.pathParam("projectId", proId)
+	.when()
+	.delete("projects/{projectId}")
+	.then()
+	.log()
+	.all();
+	
+}
+}
+
+->Chaining multiple APIs in the execution order is called API sequencing/ API Call Sequencing
+------------------------------------------------------------------------------------------------------------------------
+
+Authentication:-
+
+-->What is Authentication? and How does Authorization work in REST WebServices?
+=Authentication is a process to prove that you are the person you intend to be.
+
+Preemptive basic authentication sends the credentials even before the server ives an unauthorized
+ response in certain situations, thus additional call is avoided. 
+We normally prefer Preemptive basic authentication in most situations, 
+unless we want to test the server’s ability to send back the challenge response.
+will send the credentials without waiting for an Unauthorized response.
+
+Basic Auth:-
+               -> Username and password
+              -> not secured as username and passowrd can be shared and remembered
+
+
+public class BasicAuthTest {
+	@Test
+	public void basicAuth(){
+		given()
+		 		.auth().basic("rmgyantra", "rmgy@9999")
+		.when()
+				.get("http://localhost:8084/login")
+		.then()
+				.assertThat().statusCode(202).log().all();
+	}
+}
+
+
+example2:-
+\public class AuthenticationTest {
+@Test
+public void preamtiveAuth(){
+		given()
+				.auth().preemptive().basic("rmgyantra", "rmgy@9999")
+		.when()
+				.get("http://localhost:8084/login")
+		.then()
+				.assertThat().log().all();
+				
+}
+@Test
+public void digestiveAuth(){
+		given()
+				.auth().digest("rmgyantra", "rmgy@9999")
+		.when()
+				.get("http://localhost:8084/login")
+		.then()
+				.assertThat().log().all();
+				
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> Bearer Token -> This token is generated by API developers and shared to testing team
+                   This token cannot be easily remembered and hence it provides one level security
+                   This token can be used multiple times untill the developer changes.
+
+
+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
+base URI -> https://api.github.com
+Endpoint -> /user/repos
+request Body -> {
+                 "name":"SDET-BEARERREST",
+                 "description":"Rest in peace"
+                }
+
+example:-
+public class BearerTokenTest {
+@Test
+public void authentication(){
+	given()
+	 		.auth().oauth2("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")
+	.when()
+			.get("https://api.github.com/user/repos")
+	.then()
+			.assertThat().statusCode(200).log().all();
+}
+}
+
+
+
+
+
+
+
+-> Oauth 2.0 -> Its a authentication standard
+               -> It provides 2 level security 
+               -> API developer will share Client ID and Client Secret 
+               -> With the help client id and client secret a third party application/
+                  oauth App will generate a access Token 
+               -> This access Token is valid only for few mins 
+               -> For every execution new token is generated
+
+Client ID - chickenShop
+Client Secret - 3f8de69e94cb3f5ea3a72eaf8489361d
+Redirect URI - 	http://example.com
+userid-3884
+
+url to generate token - http://coop.apps.symfonycasts.com/token
+
+
+public class Auth2Test {
+	@Test
+	public void authentication(){
+		 Response response = given()
+				.formParam("client_id", "chickenShop")
+				.formParam("client_secret", "3f8de69e94cb3f5ea3a72eaf8489361d")
+				.formParam("grant_type", "client_credentials")
+				.formParam("redirect_uri", "https://example.com")
+				.formParam("code", "3884")
+		.when()
+				.post("http://coop.apps.symfonycasts.com/token");
+	     System.out.println(response);
+		 String token = response.jsonPath().get("access_token");
+		 
+		 given()
+		 		.auth().oauth2(token)
+		 		.pathParam("USER_ID", 2934)
+		 .when()
+		 		.post("http://coop.apps.symfonycasts.com/api/{USER_ID}/eggs-count")
+		 	.then().log().all();	
+	
+	
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
